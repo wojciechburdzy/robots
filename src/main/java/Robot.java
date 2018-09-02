@@ -1,23 +1,23 @@
 public class Robot {
 
-    private int x;
-    private int y;
+    private Point point;
     private String orientation;
+    private String lost="";
 
-    public int getX() {
-        return x;
+    public Robot() {
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public Robot(Point point, String orientation) {
+        this.point = point;
+        this.orientation = orientation;
     }
 
-    public int getY() {
-        return y;
+    public Point getPoint() {
+        return point;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setPoint(Point point) {
+        this.point = point;
     }
 
     public String getOrientation() {
@@ -26,5 +26,13 @@ public class Robot {
 
     public void setOrientation(String orientation) {
         this.orientation = orientation;
+    }
+
+    public String getLost() {
+        return lost;
+    }
+
+    public void setLost(String lost) {
+        this.lost = lost;
     }
 }
